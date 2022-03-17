@@ -6,6 +6,6 @@ fun main() {
     val minCommission = 35.toDouble()
 
     val commission = sum * sumOfCommission / 100
-    val amount = if (commission < minCommission) sum - 35 else sum - commission
+    val amount = if (commission < minCommission) sum - minCommission else sum - commission
     println ("Вы хотите перевести: $sum руб. После комиссии сумма составит: $amount руб.")
 }
